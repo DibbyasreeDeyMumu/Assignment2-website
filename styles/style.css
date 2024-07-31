@@ -23,7 +23,7 @@ section{
     
 }
 .des{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -46,7 +46,7 @@ section{
     margin-bottom: 0px;
 }
 .habit-des, .hab-card-des{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.5);
 }
 /* navbar styles */
@@ -187,6 +187,15 @@ section{
 .run-des{
     margin-bottom: 50px;
 }
+/* calculator style */
+.cal-content{
+    max-width: 670px;
+    margin: 0 auto;
+}
+.cal-box{
+    background-color: rgba(48, 48, 48, 0.54);
+}
+
 /* team style */
 
 .team-img{
@@ -215,7 +224,7 @@ section{
     .navbar, .nav-links, .banner, .habit-container,.run{
         flex-direction: column;
     }
-    .habit-container{
+    .habit-container, .team-img{
         grid-template-columns: 1fr;
         justify-items: center;
     }
