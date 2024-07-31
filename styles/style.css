@@ -82,7 +82,7 @@ section{
     border: none;
     
 }
-.navbar, .banner, .habits, .run{
+.navbar, .banner, .habits, .run, .team{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -164,10 +164,10 @@ section{
     gap: 140px;
 }
 .run-img{
-    max-width: 366px;
+    width: 366px;
     height: 312px;
     border-radius: 18px;
-    width: 100%;
+    /* width: 100%; */
     padding-top: 30px;
     padding-bottom: 30px;
     padding-right: 25px;
@@ -187,6 +187,28 @@ section{
 .run-des{
     margin-bottom: 50px;
 }
+/* team style */
+
+.team-img{
+    /* max-width: 950px; */
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(48, 48, 48, 0.54);
+}
+.team-img-design{
+    width: 327px;
+    height: 272px;
+    border-radius: 18px;
+}
+.team-content{
+    max-width: 671px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
