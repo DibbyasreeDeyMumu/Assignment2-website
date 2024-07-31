@@ -82,7 +82,7 @@ section{
     border: none;
     
 }
-.navbar, .banner, .habits, .run, .team{
+.navbar, .banner, .habits, .run, .team, .foot{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -217,11 +217,54 @@ section{
     text-align: center;
     margin-bottom: 58px;
 }
+/* foot */
+.foot-table{
+    max-width: 440px;
+    /* height: 176px; */
+    margin-bottom: 73px;
+}
+.foot-input{
+    max-width: 514px;
+    gap: 120px;
+}
+.foottitle{
+    color: #E6533C;
+    font-size: 4.2rem;  
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.Get-Started{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.lists{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    list-style: none;
+    margin-left: 0px;
 
+}
+.foot{
+    align-items: center;
+    gap: 100px;
+    height: 250px;
+    margin: 60px 170px 190px 190px;
+}
+.cal-box{
+    margin-top: 88px;
+}
+.footerr{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 318px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+}
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .banner, .habit-container,.run{
+    .navbar, .nav-links, .banner, .habit-container,.run, .foot, .foot-input{
         flex-direction: column;
     }
     .habit-container, .team-img{
@@ -229,9 +272,17 @@ section{
         justify-items: center;
     }
     .run{
-        gap: 50px;
+        gap: 1px;
         margin-left: 20px;
         margin-right: 20px;
+    }
+    .run-img{
+        padding-top: 0px;
+        margin-left: 20px;
+    }
+    .foot, .foot-input{
+        gap: 2px;
+        margin: 0px;
     }
 
 }
