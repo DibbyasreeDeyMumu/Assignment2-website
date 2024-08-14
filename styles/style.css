@@ -82,7 +82,7 @@ section{
     border: none;
     
 }
-.navbar, .banner, .habits, .run, .team, .foot{
+.navbar, .banner, .habits, .run, .team{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -261,6 +261,10 @@ table{
     border-radius: 42px;
     border: none;
 }
+.cal-content{
+    max-width: 670px;
+    margin: 0 auto;
+}
 /* team style */
 
 .team-img{
@@ -283,6 +287,10 @@ table{
     margin-bottom: 58px;
 }
 /* foot */
+.foot{
+    max-width: 1060px;
+    margin: 0 auto;
+}
 .foot-table{
     max-width: 440px;
     /* height: 176px; */
@@ -349,7 +357,7 @@ table{
         gap: 2px;
         margin: 0px;
     }
-    .cal-box2, .form-container{
+    .cal-box2, .form-container, .cal-con{
         width: 100%;
     }
     .form-backcolo{
@@ -357,6 +365,9 @@ table{
     }
     .calbox-1{
         margin-left: 0px;
+    }
+    .cal-con{
+        gap: 20px;
     }
 
 }
