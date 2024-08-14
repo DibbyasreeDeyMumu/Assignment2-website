@@ -82,7 +82,7 @@ section{
     border: none;
     
 }
-.navbar, .banner, .habits, .run, .team, .foot, .cal-box{
+.navbar, .banner, .habits, .run, .team, .foot{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -188,21 +188,10 @@ section{
     margin-bottom: 50px;
 }
 /* calculator style */
-.cal-content{
-    max-width: 670px;
-    margin: 0 auto;
-}
 .calculater{
     background-color: rgba(48, 48, 48, 0.54);
-    height: 490px;
+    
    
-}
-.calbox-container{
-  padding: 50px 50px;
-}
-
-table{
-    border-collapse: collapse;
 }
 td, th{
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -218,17 +207,50 @@ td, th{
     font-weight: 500;
     
 }
-.padding{
-    padding: 12px 50px 10px 8px;
+table{
+    border-collapse: collapse;
+}
+.box1{
+    max-width: 310px;
+    height: 216px;
+    
+    
+}
+.cal-con{
+    max-width: 1060px;
+    margin: 0 auto;
+    gap: 120px;
+    align-items: center;
 }
 .box1h2{
     font-size: 1.75rem;
     color: #FFFFFF;
+    margin-top: 0px;
 }
-
-.box1{
-    max-width: 310px;
-  
+.cal-box2{
+    max-width: 577px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.form-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 34px;
+    margin-bottom: 28px;
+}
+.form-backcolo{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 12px 50px 12px 15px;
+    border: none;
+}
+.formtext-color{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1rem;
+}
+#select{
+    grid-column: span 2;
 }
 .btn-pri{
     font-size: 1.2rem;
@@ -239,37 +261,6 @@ td, th{
     border-radius: 42px;
     border: none;
 }
-.form-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    margin-top: 34px;
-    margin-bottom: 28px;
-}
-.cal-box2{
-    max-width: 577px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.cal-box{
-    gap: 80px;
-}
-
-
-.form-backcolo{
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-    padding: 12px 50px 12px 15px;
-    border: none;
-}
-#select{
-    grid-column: span 2;
-}
-.formtext-color{
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 1rem;
-}
-
 /* team style */
 
 .team-img{
@@ -338,7 +329,7 @@ td, th{
 
 /* responsive media query */
 @media screen and (max-width: 576px) {
-    .navbar, .nav-links, .banner, .habit-container,.run, .foot, .foot-input, .cal-box{
+    .navbar, .nav-links, .banner, .habit-container,.run, .foot, .foot-input, .cal-con{
         flex-direction: column;
     }
     .habit-container, .team-img{
@@ -357,6 +348,15 @@ td, th{
     .foot, .foot-input{
         gap: 2px;
         margin: 0px;
+    }
+    .cal-box2, .form-container{
+        width: 100%;
+    }
+    .form-backcolo{
+        padding-right: 0px;
+    }
+    .calbox-1{
+        margin-left: 0px;
     }
 
 }
